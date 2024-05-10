@@ -1,0 +1,12 @@
+.TVChartContainer {
+	height: 100%;
+	border-radius: 16px;
+}
+
+
+.chart-container-border{
+	background-color:var(--gray200)!important;
+}
+.chart-container .chart-markup-views {
+  display: none !important;
+}

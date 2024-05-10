@@ -1,0 +1,39 @@
+
+:root {
+  --gray0: #020817;
+  --gray100: #020817;
+  --gray200: #3e4b5d;
+	/* gray50: "#020817",
+	primary: "#ffffff",
+	grid: "#0b1732" */
+  
+  --primary: #ffffff;
+  --secondary: #9094AD;
+
+	--tv-color-platform-background: var(--gray100);
+	--tv-color-pane-background: var(--gray100);
+	--tv-color-toolbar-button-background-hover: var(--gray200);
+	--tv-color-toolbar-button-background-secondary-hover: var(--gray100);
+	--tv-color-toolbar-button-background-expanded: var(--gray100);
+	--tv-color-toolbar-button-text: var(--secondary);
+	--tv-color-toolbar-button-text-hover: var(--primary);
+	--tv-color-toolbar-button-text-active: var(--primary);
+	--tv-color-toolbar-button-text-active-hover: var(--primary);
+	--tv-color-item-active-text: var(--primary);
+	--tv-color-toolbar-toggle-button-background-active: var(--gray200);
+	--tv-color-toolbar-toggle-button-background-active-hover: var(--gray200);
+	background-color:var(--gray100)!important;
+}
+
+
+
+.chart-page .chart-container-border {
+  background-color: var(--gray100)!important;
+}
+.TVChartContainer iframe .html.theme-dark .chart-page .chart-container-border{
+	background-color:var(--gray100)!important;
+}
+
+html.theme-dark .chart-page .chart-container-border {
+	background-color:var(--gray100)!important;
+}

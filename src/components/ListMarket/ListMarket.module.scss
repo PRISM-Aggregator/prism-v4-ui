@@ -1,0 +1,100 @@
+.listMarket {
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  .stepsInfo {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      margin-top: 8px;
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--secondary);
+        transition: background-color .2s cubic-bezier(.4,0,.2,1);
+
+        &.complete {
+          background-color: var(--green700);
+        }
+      }
+      
+      .line {
+        width: 2px;
+        border-radius: 12px;
+        background-color: var(--secondary);
+        transition: background-color .2s cubic-bezier(.4,0,.2,1);
+
+        &.complete {
+          background-color: var(--green700);
+        }
+      }
+    }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 340px;
+      .step {
+        display: flex;
+        flex-direction: column;
+        &.disabled {
+          * {
+            opacity: 0;
+          }
+
+          .label:first-child {
+            opacity: 1;
+          }
+        }
+  
+        input {
+          padding:12px;
+          background-color: var(--gray100);
+          border: none;
+          border-radius: 8px;
+          color:var(--primary);
+          margin-top: 8px;
+        }
+        .label {
+          font-size: 14px;
+          color: var(--secondary);
+          margin: 4px 0;
+        }
+        .value {
+          font-size: 16px;
+          color: var(--primary);
+          font-family: Font-Bold;
+        }
+        .button {
+          display: flex;
+          align-items: center;
+          margin-top: 8px;
+          gap: 8px;
+          padding: 12px;
+          background-color: black;
+          color: white;
+          cursor: pointer;
+          max-width: fit-content;
+          border-radius: 8px;
+          &.complete {
+            background-color: var(--green100);
+            cursor: default;
+          }
+          &.disabled {
+            opacity: 0.4;
+            background-color: black;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}
